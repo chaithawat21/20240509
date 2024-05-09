@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --CobaltBlue: hsl(234, 85%, 45%);
+
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+
+
+
+    /* background */
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    /* circle */
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 0);
+    font-family: "Hanken Grotesk", sans-serif;
+}
+
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+
+}
+
+.card {
+    max-width: 40rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    box-shadow: 20px 20px 30px 0px rgba(0, 0, 0, 0.075);
+}
+
+.card-left {
+    width: 50%;
+    background-image: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue));
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--White);
+    padding: 3em;
+    gap: 1em;
+}
+
+.head {
+    color: var(--PaleBlue);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.circle {
+    width: 10em;
+    height: 10em;
+
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, var(--VioletBlue), var(--PersianBlue));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-scored {
+    display: inline-block;
+    font-size: 3em;
+    font-weight: 600;
+    margin: 0;
+
+}
+
+.circle-overall-scored {
+    color: var(--LightLavender);
+    margin: 0;
+}
+
+.result {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.description {
+    color: var(--PaleBlue);
+}
+
+
+.card-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 3em;
+
+}
+
+.sum {
+    color: var(--DarkGrayBlue);
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+.red {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    color: var(--LightRed);
+    background-color: hsla(0, 100%, 67%, .1);
+    border-radius: 10px;
+}
+
+.yellow {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    color: var(--OrangeyYellow);
+    background-color: hsla(39, 100%, 56%, .1);
+    border-radius: 10px;
+}
+
+.green {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    color: var(--GreenTeal);
+    background-color: hsla(166, 100%, 37%, .1);
+    border-radius: 10px;
+}
+
+.blue {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 1em;
+    color: var(--CobaltBlue);
+    background-color: hsla(234, 85%, 45%, .1);
+    border-radius: 10px;
+}
+
+.subject {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+}
+
+.total {
+    display: flex;
+    align-items: center;
+    gap: 1ch;
+    font-family: 600;
+}
+
+.scored {
+    color: var(--DarkGrayBlue);
+}
+
+.overall-scored {
+    color: hsla(224, 30%, 27%, .5);
+}
+
+.con {
+    border: none;
+    background-color: var(--DarkGrayBlue);
+    color: var(--White);
+    font-size: 1em;
+    padding: 1.2em;
+    border-radius: 30px;
+    margin-top: 1em;
+    cursor: pointer;
+}
+
+.con:hover {
+    background-image: linear-gradient(to bottom, var(--LightSlateBlue), var(--LightRoyalBlue));
+}
+footer {
+    margin-top: 10em;
+}
+
+@media (max-width: 375px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+
+
+    }
+
+    .card-left {
+        width: 100%;
+        border-radius: 0 0 30px 30px;
+        padding-top: 1em;
+
+    }
+
+    .card-right {
+        width: 100%;
+        padding-top: 1em;
+    }
+
+    footer {
+        margin-top: 0;
+        margin-block: .5em;
+        font-size: .75em;
+    }
+}
