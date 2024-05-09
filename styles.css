@@ -39,7 +39,7 @@ body {
 }
 
 .card {
-    max-width: 40rem;
+    max-width: 45rem;
     display: flex;
     flex-direction: row;
     border-radius: 30px;
