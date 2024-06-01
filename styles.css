@@ -124,6 +124,7 @@ body {
     color: var(--LightRed);
     background-color: hsla(0, 100%, 67%, .1);
     border-radius: 10px;
+    
 }
 
 .yellow {
@@ -144,6 +145,7 @@ body {
     color: var(--GreenTeal);
     background-color: hsla(166, 100%, 37%, .1);
     border-radius: 10px;
+  
 }
 
 .blue {
@@ -193,6 +195,10 @@ body {
 }
 footer {
     margin-top: 10em;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 @media (max-width: 375px) {
